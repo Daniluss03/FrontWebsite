@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Homee/Home';
+import About from './pages/about/about';
+
+
+import Servicios from './pages/servicios/services';
+import Navbar from './pages/Navbar';
+import Sidebar from './pages/Sidebar';
+import Question from './components/Accordion/Accordion';
+import Footter from './pages/Footer';
+import formulario from './pages/Contacto'
+import Contactanos_1 from './pages/Contacto';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
+
+    return (
+        <Router>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
+            <Home />
+            
+            <About />
+           <Servicios/>
+            <Question/>
+          <Contactanos_1/>
+           <Footter/>
+        </Router>
+    );
 }
 
 export default App;
