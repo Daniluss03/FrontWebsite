@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to='proyectos'>Proyetos</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href="" target="_blank" rel='noreferrer noopener'><FaLinkedin /></NavLinks>
+                            <NavLinks href="https://www.linkedin.com/in/danilo-rincon-maldonado-2a1bb9217/" target="https://www.linkedin.com/in/danilo-rincon-maldonado-2a1bb9217/" rel='noreferrer noopener'><FaLinkedin /></NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks href="" target="_blank" rel='noreferrer noopener'><FaFacebook /></NavLinks>

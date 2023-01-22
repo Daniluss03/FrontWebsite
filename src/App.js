@@ -11,8 +11,11 @@ import Navbar from './pages/Navbar';
 import Sidebar from './pages/Sidebar';
 import Question from './components/Accordion/Accordion';
 import Footter from './pages/Footer';
-import formulario from './pages/Contacto'
-import Contactanos_1 from './pages/Contacto';
+import {  Personal_Information, Proyects_Information } from './components/Data/Data_information_1';
+
+
+
+
 function App() {
 
 
@@ -28,10 +31,10 @@ function App() {
             <Navbar toggle={toggle} />
             <Home />
             
-            <About />
-           <Servicios/>
+            <About  about_me={Personal_Information} />
+           <Servicios informaciones={Proyects_Information} />
             <Question/>
-          <Contactanos_1/>
+         
            <Footter/>
         </Router>
     );

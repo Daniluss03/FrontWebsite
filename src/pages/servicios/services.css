@@ -32,13 +32,17 @@ h1{
     }
     
 }
-
+i{
+    color:#fff;
+    font-size: 10vh;
+ 
+}
 
 .card{
     background-color: #37517e;
     border: 2px solid transparent;
     text-align: center;
-    padding: 10rem  2rem;
+    padding: 3rem  2rem;
     border-radius: 3rem  3rem 3rem 3rem;
     justify-content:auto;
     transition: var(--transition);
@@ -69,6 +73,8 @@ h1{
     background-color: var(--color-secondary);
     color:var(--color-gray-600)
 }
+
+
 .card small{
     margin-top: 1rem;
     display: block;
