@@ -1,10 +1,11 @@
-import React from 'react';
+
 import { FaBars } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
 import { AiFillInstagram } from 'react-icons/ai'
 import { AiOutlineTwitter } from 'react-icons/ai'
-import { BsBrightnessHigh } from "react-icons/bs";
+import React  from 'react';
+import { animateScroll } from 'react-scroll';
 import {
     Nav,
     NavbarContainer,
@@ -19,15 +20,22 @@ import {
 
 
 const Navbar = ({ toggle }) => {
-
+    const handleClick = () => {
+        animateScroll.scrollTo(500, {
+          duration: 2400,
+          smooth: 'easeInOutQuint'
+        });
+      };
 
     return (
+
+
         <>
             <Nav>
                 <NavbarContainer>
 
                     <NavLogo to="/">
-                        <img src={"logo"} style={{ width: '50%' }} />
+                        <img alt="" src={"logo"} style={{ width: '50%' }} />
                     </NavLogo>
 
                     <MobileIcon onClick={toggle}>
@@ -35,16 +43,22 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='Inicio'>Inicio</NavLinks>
+                            <NavLinks  onClick={handleClick} to='/Home'>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='Nosotros'>Nosotros</NavLinks>
+                            <NavLinks   onClick={handleClick} to='Nosotros'>About us</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='servicios'>servicios</NavLinks>
+                            <NavLinks onClick={handleClick} id='servicios'>Services</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='proyectos'>Proyetos</NavLinks>
+                            <NavLinks  onClick={handleClick} to='proyectos'>Proyects</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks  onClick={handleClick} to='login'>Login</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks  onClick={handleClick} to='plans'>Plans</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks href="https://www.linkedin.com/in/danilo-rincon-maldonado-2a1bb9217/" target="https://www.linkedin.com/in/danilo-rincon-maldonado-2a1bb9217/" rel='noreferrer noopener'><FaLinkedin /></NavLinks>

@@ -1,0 +1,33 @@
+.modal{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.6);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+width: 500px;
+background-color: #fff;
+}
+.header{
+padding: 10px;
+}
+
+.title{
+margin: 0%;
+}
+.body{
+padding: 10px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+}
+.footer{
+padding: 10px;
+}
+.button{
+color:#37517e ;
+display: flex;
+
+
+}

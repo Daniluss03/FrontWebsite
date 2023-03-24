@@ -11,9 +11,9 @@ function Offcanvas_1({About_me_more}) {
   const handleShow = () => setShow(true);
 
   return (
-    <>
+    <section>
       <Button variant="primary" onClick={handleShow}>
-        MORE
+CLICK ME 
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
@@ -42,7 +42,7 @@ function Offcanvas_1({About_me_more}) {
         )})}
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </section>
   );
 }
 export default Offcanvas_1;

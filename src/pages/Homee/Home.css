@@ -33,6 +33,24 @@ img{
 }
 
 
+@media screen  and (max-width:360px){
+    
+  img{
+    width: 35%;
+    margin-left: 1.5rem;
+  }
+  .rigth-Home{
+    padding: 1rem ;
+    margin-top: 1.5rem;
+
+  }
+  h1{
+    font-size: 1rem;
+    background-color: #fff;
+    font-weight: 100;
+  }
+}
+
 h1{
 padding: 1rem ;
   background-color: #fff;
@@ -53,7 +71,7 @@ padding: 1rem ;
   padding-top: 1%;
 
 }
-.section{
+.sectionHome{
   background-color: #37517e;
-
+padding: 1rem;
 }

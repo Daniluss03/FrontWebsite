@@ -4,7 +4,7 @@ import  {Link as linkR} from 'react-router-dom';
 import  {Link as linkS} from 'react-router-dom'; 
 
 export const Nav=styled.nav`
-background: #fff;
+background:  #fff;
 height: 72px;
 display:flex;
 justify-content:center;
@@ -14,7 +14,7 @@ position:sticky;
 top:0;
 z-index: 997;
 transition: all 0.5s;
-background: #fff;
+
 box-shadow: #000
 
 @media screen and (max-width:960px){
@@ -34,7 +34,7 @@ max-width: 1100px;
 `;
 
 export const NavLogo=styled(linkR)`
-color:#000;
+color: #37517e;
 justify-self:flex-start;
 cursor:pointer;
 font-size:1.5rem;

@@ -1,50 +1,67 @@
 import {GiAbstract082,GiAbstract066,GiAbstract096}from "react-icons/gi";
+import uno from '../../images/uno.jpg'
+import dos from '../../images/dos.jpg'
+import tres from '../../images/tres.jpeg'
+import cuatro from '../../images/cuatro.jpg'
+import cinco from '../../images/cinco.jpg'
+import seis from '../../images/seis.jpg'
+import { LoremIpsum } from 'react-lorem-ipsum';
+
 export const Personal_Information = [{
    
-    about: "Software Developer talented at translating customer requirements into testable engineering plans. Works alongside clients and colleagues through all stages of development to produce exceptional final products   ",
-    Studies: "Im studying System engenier at the industrial university ",
+    about:    <LoremIpsum p={1} />,
+    Studies:    <LoremIpsum p={3} />,
 }]
 
 export const Proyects_Information = [{
 
     id: 1,
-    image: <GiAbstract082/>,
-    title: "Davivienda",
-    made: 'Realization of a collection and payment software for transactional processes of a bank through the react.js library',
-    demo: 'dsda',
+    image: uno,
+   
 
 },
 {
     id: 2,
-    image: <GiAbstract066/>,
-    title: "Fundacion de la mujer",
-    made: 'Realization of a software developed with the react.js library that would allow the query of pin payment and disbursement of collections',
+    image: dos,
    
 
 
 },
 {
     id: 3,
-    image: <GiAbstract096/>,
-    title: "Loteria de Bogota",
-    made: 'Realization of a software developed with the react.js library that would allow the sale of physical and virtual lottery tickets and fractions',
-    
-
+    image: tres,
+  
+},
+{
+    id: 4,
+    image: cuatro,
+  
+},{
+    id: 5,
+    image: cinco,
+  
+},{
+    id: 6,
+    image: seis,
+  
 },
 
-
-    ,
+    
 ];
 export const  More_information=[{
     id:1,
-    Nombre:"My name is Danilo ",
-    student:"Im a System engineer",
+    Nombre:"Title ",
+    student:   "",
     imagen:"hola",
-    skill_1:"Aws",
-    skill_2:"React.js",
-    skill_3:"Javascript",
-    skill_4:"Django",
-    skill_5:"Relational Data bases(Postgres)",
-    skill_6:"No Relational Data bases(Mongo db)",
-    skill_7:"css",
+    skill_1:   <LoremIpsum p={2} />,
+    skill_2:"",
+    skill_3:"",
+    skill_4:   <LoremIpsum p={2} />,
+    skill_5:"",
+    skill_6:"",
+    skill_7:   <LoremIpsum p={2} />,
 }]
+
+
+
+

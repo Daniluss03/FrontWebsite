@@ -1,39 +1,70 @@
-import React from 'react'
-import'./services.css';
-import LoremIpsum from 'react-lorem-ipsum';
-const servicios = ({informaciones}) => {
+
+import './services.css';
+import React, { useState, useEffect,forwardRef } from 'react';
+
+const InformationService = () => {
+
+  const [user, setUsers] = useState({})
+
+  /* const getApiData = async () => {
+    const response = await fetch(
+      'http://127.0.0.1:8000/lista/api/'
+    ).then((response) => response.json());
+  
+    setUsers(response);
+    console.log(response)
+  };
+  
+  useEffect(() => {
+    getApiData();
+  }, []);  */
+
+
+
   return (
-<>
 
-    <h1>PROYECTS</h1>
+    <section id='servicios'>
+      <h1>Our Proyects</h1>
+      <div className="wrapper">
 
-
-    <div  className='wrapper'>
-    
-
-
-
-   {informaciones.map((informacion)=>{return(
-     <div class="card">
-      <i>{informacion.image}</i>
-     <h1> {informacion.title} </h1> 
-     <p>{informacion.made}</p>
-     
-     
-     
-     
-     </div>
-
-   )})}
+        <div className='card'>
+          <h1>this is a title</h1>
+          <p>this is a text</p>
+        </div>
 
 
-    
-     
-   
+
+        <div className='card'>
+          <h1>this is a title</h1>
+          <p>this is a text</p>
+        </div>
 
 
-    </div>
-    </>
+
+        <div className='card'>
+          <h1>this is a title</h1>
+          <p>this is a text</p>
+        </div>
+      </div>
+
+
+      {/*  <div className='wrapper'>
+
+     {   user.map((user) => {
+          return (
+
+            <div class="card">
+              <h1> {user.title} </h1>
+
+              <p>{user.content}</p>
+            </div>
+
+          )
+        })}
+
+
+      </div> */}
+    </section>
   )
 }
-export default servicios
+export default InformationService;

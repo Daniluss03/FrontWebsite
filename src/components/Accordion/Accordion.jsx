@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Accordion.css'
 function Question() {
   return (
-    <>
+    <section className='Accordionsection'>
  <h1> PREGUNTAS FRECUENTES</h1>
     <div class="accordion">
 
@@ -35,7 +35,7 @@ function Question() {
       </Accordion.Item>
     </Accordion>
     </div>
-    </>
+    </section>
   );
 }
 

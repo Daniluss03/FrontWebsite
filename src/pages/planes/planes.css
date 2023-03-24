@@ -1,4 +1,4 @@
-.wrapper{
+.wrapperplans{
     display: grid;
    grid-template-columns: repeat(3,1fr);
    gap:6rem;
@@ -18,17 +18,17 @@ h1{
 
 @media screen  and (max-width:1024px){
     
-    .wrapper{
+    .wrapperplans{
       
-       grid-template-columns: 1fr 1fr ;
+       grid-template-columns: 1fr 1fr;
     }
     
 }
 @media screen  and (max-width:500px){
     
-    .wrapper{
+    .wrapperplans{
       
-       grid-template-columns: 1fr  ;
+       grid-template-columns: 1fr ;
     }
     
 }
@@ -38,7 +38,7 @@ i{
  
 }
 
-.card{
+.cardplans{
     background-color: #37517e;
     border: 2px solid transparent;
     text-align: center;
@@ -49,13 +49,13 @@ i{
     margin-top: 1.5rem;
 
 }
-.card:hover{
+.cardplans:hover{
     background-color: transparent;
     border-color: var(--color-gray-400);
     cursor: default;
 }
 
-.card span{
+.cardplans span{
     width: 3rem;
     height: 3rem;
     background-color: var(#37517e);
@@ -69,18 +69,34 @@ i{
     transition: var(--transition);
 }
 
-.card:hover span{
+.cardplans:hover span{
     background-color: var(--color-secondary);
     color:var(--color-gray-600)
 }
 
 
-.card small{
+.cardplans small{
     margin-top: 1rem;
     display: block;
     font-weight: 300;
 }
 section{
     background-color: #fff;
-    padding: 1rem;
+    
 }
+.buttonplans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    border: 1px solid #37517e;;
+    border-radius: .25rem;
+    color: #37517e;
+    transition: color .15s ease-in-out,
+     
+}
+
+.buttonplans:hover, .btn-borde:active, .btn-borde:focus {
+    color: #fff;
+    background-color:#37517e;
+  }

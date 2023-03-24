@@ -11,9 +11,11 @@ import Navbar from './pages/Navbar';
 import Sidebar from './pages/Sidebar';
 import Question from './components/Accordion/Accordion';
 import Footter from './pages/Footer';
-import {  Personal_Information, Proyects_Information } from './components/Data/Data_information_1';
+import { Personal_Information } from './components/Data/Data_information_1';
 
-
+import LoginComponent from './components/login'
+import Plans from './pages/planes';
+import ScrollButton from './components/Scrollup';
 
 
 function App() {
@@ -27,16 +29,28 @@ function App() {
 
     return (
         <Router>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <Home />
-            
-            <About  about_me={Personal_Information} />
-           <Servicios informaciones={Proyects_Information} />
+
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+          
+            <Home /> 
+            <About about_me={Personal_Information} />
             <Question/>
-         
-           <Footter/>
+            
+              {/*   <Route
+                    path='/'
+                    element={  }
+                /> */}
+            <Servicios/>
+               
+              <ScrollButton/>
+            <Plans/>
+
+
+
+            <Footter/>
         </Router>
+       
     );
 }
 
